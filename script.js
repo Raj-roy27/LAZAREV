@@ -1,7 +1,7 @@
 function navAnimation(){
     let nav = document.querySelector("nav");
     let navPart2 = document.querySelector(".nav-part2");
-nav.addEventListener("mouseenter", () => {
+navPart2.addEventListener("mouseenter", () => {
   let tl = gsap.timeline();
   tl.to("#nav-bottom", {
     height: "23vh",
@@ -17,7 +17,7 @@ nav.addEventListener("mouseenter", () => {
   });
 });
 
-nav.addEventListener("mouseleave", () => {
+navPart2.addEventListener("mouseleave", () => {
   let tl = gsap.timeline();
 
   tl.to(".nav-part2 h5 span", {
