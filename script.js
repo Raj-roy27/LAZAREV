@@ -15,7 +15,7 @@ navPart2.addEventListener("mouseenter", () => {
       amount: 0.7,
     },
   });
-});
+});   
 
 navPart2.addEventListener("mouseleave", () => {
   let tl = gsap.timeline();
