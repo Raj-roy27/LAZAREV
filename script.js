@@ -95,9 +95,9 @@ page3Video.addEventListener("click", ()=>{
 }
 
 
-navAnimation();
-page2Animation();
-page3Animation();
+// navAnimation();
+// page2Animation();
+// page3Animation();
 
 
 
