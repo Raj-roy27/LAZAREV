@@ -76,7 +76,7 @@ nav button {
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease-in;
   &:hover {
     background-color: #111;
     color: #0ba34e;
@@ -87,10 +87,6 @@ nav button i {
   height: 1vw;
   margin-left: 1.6vw;
   transition: all 0.3s ease;
-}
-nav button:hover i {
-  background-color: #0ba34e;
-  border-radius: 50%;
 }
 
 #nav-bottom {
@@ -466,4 +462,142 @@ nav button:hover i {
   object-fit: cover;
   opacity: 0;
   transition: opacity ease 0.3s;
+}
+
+.page-7 {
+  min-height: 100vh;
+  background-color: #111111;
+  width: 100%;
+  position: relative;
+  padding: 5vh 10.5vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page-7 > button {
+  background-color: #0ba34e;
+  padding: 0.9vw 2.5vw;
+  font-weight: 600;
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: sticky;
+  top: 15%;
+}
+.page7-right {
+  width: 70%;
+}
+.page7-right > p {
+  font-size: 2vw;
+  text-align: justify;
+}
+.page7-right > p span {
+  width: 15vw;
+  display: inline-block;
+}
+
+.page7-content {
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 5vh;
+  padding: 5vh 0;
+  border-top: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4vh;
+}
+.page7-content h1 {
+  font-size: 3vw;
+}
+.page7-content .flex {
+  display: flex;
+  margin-top: 5vh;
+  gap: 10px;
+}
+.page7-content .flex h4 {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 0.8vw;
+}
+.page7-container {
+  padding: 4vh 0;
+}
+.page7-elem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0.5vw;
+  padding-top: 3vh;
+  padding-bottom: 8vh;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #333;
+  transition: all 0.7s ease;
+}
+.page7-elem h3 {
+  font-size: 1.5vw;
+  font-weight: 600;
+  position: relative;
+  z-index: 8;
+  transition: all 0.7s ease;
+}
+.page7-elem p {
+  width: 55%;
+  font-size: 0.8vw;
+  position: relative;
+  z-index: 8;
+}
+.page7-elem i {
+  font: 1.5vw;
+  position: relative;
+  z-index: 8;
+  transition: all 0.7s ease;
+}
+.over {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.page7-elem:hover h3 {
+  padding-left: 1.3vw;
+}
+.page7-elem:hover i {
+  padding-right: 1.3vw;
+}
+.page7-elem:hover .over {
+  transform: translateY(0);
+  opacity: 1;
+}
+.page7-elem:hover {
+  border-top: 1px solid #fff;
+  transition: all 0.7s ease;
+}
+
+summary::marker {
+  content: "";
+}
+
+.product {
+  padding-top: 4vh;
+  border-top: 2px solid #333;
+}
+
+summary h1 i {
+  font-size: 2.5vw;
+  font-weight: 10;
+  color: #555;
+  position: absolute;
+  right: 11%;
+  margin-top: 12px;
 }
