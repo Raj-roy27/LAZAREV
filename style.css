@@ -24,7 +24,6 @@ nav {
   align-items: flex-start;
   width: 100%;
   height: 12vh;
-  padding: 2vw 10.4vw;
   padding: 1.5vw 9vw;
   justify-content: space-between;
   z-index: 10;
@@ -325,7 +324,6 @@ nav button:hover i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #333;
 }
 .page4-left {
   height: 100%;
@@ -360,7 +358,7 @@ nav button:hover i {
   font-weight: 500;
   text-transform: uppercase;
 }
-.page4-right-elem h5{
+.page4-right-elem h5 {
   color: #000;
   font-size: 1.22vw;
   font-weight: 500;
@@ -368,8 +366,7 @@ nav button:hover i {
   line-height: 2vw;
 }
 
-
-.page-5{
+.page-5 {
   height: 92vh;
   width: 100%;
   background-color: #ffffff;
@@ -381,7 +378,7 @@ nav button:hover i {
   justify-content: center;
   gap: 1vw;
 }
-.page-5 .page5-box{
+.page-5 .page5-box {
   width: 30%;
   padding: 2vw 1.5vw;
   background-color: #eeecec;
@@ -393,18 +390,80 @@ nav button:hover i {
   border-radius: 10px;
   margin-bottom: 2vw;
 }
-.page5-box h4{
+.page5-box h4 {
   color: #111111;
   font-size: 3.5vw;
   font-weight: 700;
 }
-.page5-para{
+.page5-para {
   display: flex;
   justify-content: space-between;
   gap: 8vw;
 }
-.page5-para p{
+.page5-para p {
   color: #555555;
   font-size: 0.8vw;
   font-weight: 400;
+}
+
+.page-6 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111111;
+  position: relative;
+  padding-bottom: 13vh;
+}
+.section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15vh 10vw;
+}
+.sec-left {
+  height: 80vh;
+  width: 25%;
+  /* background-color: rgb(175, 178, 177); */
+  border-top: 1px solid #333;
+  padding-top: 3vh;
+  transition: all 0.5s ease;
+
+  &:hover {
+    border-top: 2px solid #fff;
+  }
+}
+.sec-left h2 {
+  font-size: 2.5vw;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.sec-left p {
+  color: #edebeb;
+  margin-top: 10vh;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-align: justify;
+}
+.sec-right {
+  height: 80vh;
+  width: 70%;
+  background-color: #16ca64ae;
+  position: relative;
+}
+.sec-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.sec-right video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity ease 0.3s;
 }
