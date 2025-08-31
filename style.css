@@ -661,3 +661,155 @@ summary h1 i {
   transition: opacity 0.5s ease;
   border-radius: 5px;
 }
+
+.page-9{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 7vh 10.5vw;
+}
+.page-9>h1{
+  font-size: 5vw;
+  font-weight: 700;
+  color: #000;
+  /* padding-left: 40vw; */
+  /* padding-right: 5vw; */
+  line-height: 5.8vw;
+}
+.page9-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 4vh 0;
+}
+.page9-content .right-9{
+  width: 52%;
+}
+.page9-content .right-9 p{
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 5vh;
+  text-align: justify;
+}
+.blue-btn{
+  background-color: #4f5bff;
+  width: 15vw;
+  height: 3.5vw;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 15%;
+}
+.blue-btn h4{
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9vw;
+  letter-spacing: .85px;
+}
+.blue-btn h4 i{
+  font-size: 1.2vw;
+  font-weight: 100;
+  margin-left: 0.5vw;
+}
+
+.page9-bottom{
+  height: 60vh;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-bottom: 1px solid #cccccc;
+}
+.btm9-part-1{
+  border-right: 1px solid #cccccc;
+  width: 30%;
+  height: 100%;
+}
+.btm9-part-2{
+  border-right: 1px solid #cccccc;
+  width: 28%;
+  height: 100%;
+  
+}
+.btm9-part-3{
+  border-right: 1px solid #cccccc;
+  width: 18%;
+  height: 100%;
+ 
+}
+.btm9-part-4{
+  border-right: 1px solid #cccccc;
+  width: 18%;
+  height: 100%;
+ 
+}
+.btm9-part-5{
+  width: 12%;
+  height: 100%;
+ 
+}
+
+#btm6-parts{
+  padding: 3vh 0.1vw;
+}
+#btm6-parts h5{
+  color: #555;
+  font-weight: 500;
+  font-size: 1vw;
+  margin-bottom: 4vh;
+}
+
+#btm6-parts h4{
+  background-color: #111;
+  width: 80%;
+  padding: 6px 8px;
+  border-radius: 50px;
+  font-size: 1vw;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin-bottom: .5vh;
+}
+#btm6-parts h4 span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2vw;
+  height: 2vw;
+  background-color: #333;
+  padding: 0.5vw;
+  border-radius: 50%;
+  margin-right: .3vw;
+}
+#btm6-parts h4:nth-child(2){
+  transform: translateX(0);
+}
+
+#btm6-parts h4:nth-child(3){
+  transform: translateX(10%);
+}
+
+#btm6-parts h4:nth-child(4){
+  transform: translateX(20%);
+}
+
+#btm6-parts h4:nth-child(5){
+  transform: translateX(30%);
+}
+
+#btm6-parts h4:nth-child(6){
+  transform: translateX(40%);
+}
+
+#btm6-parts h4:nth-child(7){
+  transform: translateX(50%);
+}
+.page-10{
+  height: 100vh;
+  background-color: #111111;
+}

@@ -143,8 +143,22 @@ function page8Animation() {
     videoBox3.childNodes[1].load();
   });
 }
+function page9Animation() {
+  gsap.from("#btm6-parts h4", {
+    x: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#btm6-parts",
+      scroller: "body",
+      start: "top 70%",
+      end: "top 10%",
+      scrub: true,
+    },
+  });
+}
 navAnimation();
 page2Animation();
 page3Animation();
 page6Animation();
 page8Animation();
+page9Animation();
