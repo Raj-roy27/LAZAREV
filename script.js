@@ -34,6 +34,34 @@ function locomotiveAnimation() {
   ScrollTrigger.refresh();
 }
 
+function loadingAnimation() {
+  var tl = gsap.timeline();
+  tl.from(".page-1", {
+    opacity: 0,
+    duration: 0.2,
+    delay: 0.2,
+  });
+  tl.from(".page-1", {
+    transform: "scaleX(0.7) scaleY(0.2) translateY(100%)",
+    borderRadius: "150px",
+    duration: 2,
+    ease: "expo.out",
+  });
+  tl.from("nav", {
+    opacity: 0,
+    delay: -0.2,
+  });
+
+  tl.from(".page-1 h1",{
+    
+  })
+  tl.from(".page-1 p, .page-1 div", {
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.2,
+  });
+}
+
 function navAnimation() {
   let nav = document.querySelector("nav");
   let navPart2 = document.querySelector(".nav-part2");
@@ -194,6 +222,7 @@ function page9Animation() {
 }
 
 locomotiveAnimation();
+loadingAnimation();
 navAnimation();
 page2Animation();
 page3Animation();
