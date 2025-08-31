@@ -53,7 +53,11 @@ function loadingAnimation() {
   });
 
   tl.from(".page-1 h1",{
-    
+    y:60,
+    opacity:0,
+    duration:0.6,
+    delay:0.2,
+    stagger:0.2,
   })
   tl.from(".page-1 p, .page-1 div", {
     opacity: 0,
