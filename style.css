@@ -110,6 +110,7 @@ nav button i {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .page-1 h1 {
   font-size: 7vw;
