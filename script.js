@@ -94,23 +94,57 @@ function page3Animation() {
   });
 }
 
-function page6Animation(){
+function page6Animation() {
   let sections = document.querySelectorAll(".sec-right");
 
-sections.forEach((e) => {
-  e.addEventListener("mouseenter", () => {
-    e.childNodes[3].style.opacity = 1;
-    e.childNodes[3].play();
-  });
+  sections.forEach((e) => {
+    e.addEventListener("mouseenter", () => {
+      e.childNodes[3].style.opacity = 1;
+      e.childNodes[3].play();
+    });
 
-  e.addEventListener("mouseleave", () => {
-    e.childNodes[3].style.opacity = 0;
-    e.childNodes[3].load();
+    e.addEventListener("mouseleave", () => {
+      e.childNodes[3].style.opacity = 0;
+      e.childNodes[3].load();
+    });
   });
-});
 }
 
+function page8Animation() {
+  let page8Box = document.querySelector(".page-8 .page5-box");
+  let page8Video = document.querySelector("#page-8-video");
+  let p8Section = document.querySelector(".page-8");
+
+  page8Box.addEventListener("mouseenter", () => {
+    page8Box.childNodes[1].play();
+  });
+
+  page8Box.addEventListener("mouseleave", () => {
+    page8Box.childNodes[1].load();
+  });
+
+  let videoBox2 = document.querySelector("#video-box2");
+
+  videoBox2.addEventListener("mouseenter", () => {
+    videoBox2.childNodes[1].play();
+  });
+
+  videoBox2.addEventListener("mouseleave", () => {
+    videoBox2.childNodes[1].load();
+  });
+
+  let videoBox3 = document.querySelector("#video-box3");
+
+  videoBox3.addEventListener("mouseenter", () => {
+    videoBox3.childNodes[1].play();
+  });
+
+  videoBox3.addEventListener("mouseleave", () => {
+    videoBox3.childNodes[1].load();
+  });
+}
 navAnimation();
 page2Animation();
 page3Animation();
-page6Animation()
+page6Animation();
+page8Animation();
